@@ -1,0 +1,27 @@
+<!-- The content below is only a placeholder and can be replaced.
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<my-Warningapp></my-Warningapp>
+<my-Successapp></my-Successapp>
+
+<input type="text" [(ngModel)] = "username"/>
+<hr>
+<p>{{username}}</p>
+
+<button type="button" [disabled]="username === ''" (click) = "onEmptyString()">Click</button> -->
+
+<h1>Single slot transclusion</h1>
+<card header="my header" footer="my footer">
+    <!-- put your dynamic content here -->
+    <div class="card-block">
+        <h4 class="card-title">You can put any content here</h4>
+        <p class="card-text">For example this line of text and</p>
+        <a href="#" class="btn btn-primary">This button</a>
+      </div>
+      <!-- end dynamic content -->
+<card>
+
